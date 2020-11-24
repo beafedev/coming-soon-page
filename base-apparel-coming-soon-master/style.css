@@ -1,18 +1,101 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 300, 400, 600 */
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+  font-size: 1em;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 span:first-child {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+h1 span:nth-of-type(2),
+h1 span:nth-of-type(3) {
+  color: var(--dark-grayish-red);
+}
+
+p {
+  color: var(--desaturated-red);
 }
 
 img {
-    display: block;
+  display: block;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 30px;
+  margin-bottom: 35px;
 }
 
 .main-image {
-    width: 100%;
+  width: 100%;
+}
+
+main {
+  text-align: center;
 }
