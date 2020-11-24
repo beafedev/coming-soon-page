@@ -52,7 +52,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   padding-top: 30px;
   font-size: 1em;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
@@ -62,6 +62,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 26px;
 }
 
 h1 span {
@@ -80,6 +81,9 @@ h1 span:nth-of-type(3) {
 
 p {
   color: var(--desaturated-red);
+  width: 80%;
+  margin: auto;
+  line-height: 1.6;
 }
 
 img {
@@ -94,8 +98,85 @@ img {
 
 .main-image {
   width: 100%;
+  margin-bottom: 65px;
 }
 
 main {
   text-align: center;
+}
+
+form {
+  margin-top: 40px;
+}
+
+.buttonIn {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--desaturated-red);
+  opacity: 0.5;
+  border-radius: 25px;
+}
+
+input::placeholder {
+  color: var(--desaturated-red);
+  opacity: 0.5;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 45px;
+  width: 19%;
+  border-radius: 25px;
+  background-color: var(--soft-red);
+  opacity: 0.5;
+  border: none;
+  box-shadow: 0 8px 10px 0px var(--desaturated-red);
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.35;
+}
+
+button img {
+  margin: auto;
+}
+
+/* ---Error ----*/
+.input-error {
+  border: 2px solid var(--soft-red);
+}
+
+.icon-error {
+  position: absolute;
+  top: 10px;
+  left: 210px;
+}
+
+.error-message {
+  position: absolute;
+  top: 55px;
+  left: 18px;
+  color: var(--soft-red);
+}
+
+/* ---hide class default added to #icon-error <img>, <small>----*/
+.hide {
+  visibility: hidden;
+}
+
+footer {
+  margin-top: 70px;
 }
