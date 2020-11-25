@@ -195,8 +195,10 @@ footer {
 
 @media (min-width: 1060px) {
   .container {
+    height: 800px;
     background-image: url('./images/bg-pattern-desktop.svg');
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 
@@ -212,6 +214,10 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  .desktop-image {
+    transform: translateY(-87px);
   }
 
   p {
