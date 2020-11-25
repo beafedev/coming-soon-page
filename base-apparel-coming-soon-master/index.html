@@ -33,40 +33,42 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img class="logo" src="./images/logo.svg" alt="logo" />
-        <img
-          class="main-image"
-          src="./images/hero-mobile.jpg"
-          alt="main-image"
-        />
-      </header>
-      <main>
-        <h1><span>We're</span> <span>coming</span> <span>soon</span></h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <form action="">
-          <div class="buttonIn">
-            <input type="text" placeholder="Email Address" />
-            <button>
-              <img src="./images/icon-arrow.svg" alt="arrow button" />
-            </button>
-            <img
-              id="icon-error"
-              class="hide"
-              src="./images/icon-error.svg"
-              alt="icon-error"
-            />
-            <small class="error-message hide"
-              >Please provide a vaild email</small
-            >
-          </div>
-          <div></div>
-        </form>
-      </main>
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <div class="content">
+        <header class="header">
+          <img class="mobile-image" src="./images/hero-mobile.jpg" alt="" />
+          <img class="desktop-image" src="./images/hero-desktop.jpg" alt="" />
+        </header>
+        <main>
+          <h1><span>We're</span> <span>coming</span> <span>soon</span></h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="">
+            <div class="buttonIn">
+              <input id="email" type="text" placeholder="Email Address" />
+              <button id="submit">
+                <img src="./images/icon-arrow.svg" alt="arrow button" />
+              </button>
+              <img
+                id="icon-error"
+                class="hide icon-error"
+                src="./images/icon-error.svg"
+                alt="icon-error"
+              />
+              <small id="error-message" class="error-message hide"
+                >Please provide a vaild email</small
+              >
+              <small id="success-message" class="success-message hide"
+                >Thank You!</small
+              >
+            </div>
+            <div></div>
+          </form>
+        </main>
+      </div>
 
       <footer>
         <p class="attribution">
@@ -77,5 +79,6 @@
         </p>
       </footer>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
